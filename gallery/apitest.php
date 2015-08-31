@@ -1,7 +1,7 @@
 <?php
 require_once('../assets/api/flickr.php');
 
-$flickr = new FlickrPHP("eae3377da18c1307a9a48b09530ad2bc", "133398630@N03");
+$flickr = new FlickrPHP("XXX", "133398630@N03");
 $photosReturn = $flickr->getAlbums();
 // $photosetID = $photosReturn->photosets->photoset[3]->id;
 
