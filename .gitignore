@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 *.scssc
 node_modules/*
+gallery/apitest.php
