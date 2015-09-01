@@ -7,12 +7,24 @@
 	
 	<title>Jims Paradise Creations | Home</title>
 	<link rel="stylesheet" href="/assets/css/master.css">
+	<link rel="stylesheet" href="/assets/css/lightslider.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="/assets/js/jquery.numeric.min.js"></script>
+	<script src="/assets/js/lightslider.js"></script>
 	<script src="/assets/js/main.js"></script>
 	<script src="//use.typekit.net/ndx1ovc.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#lightSlider").lightSlider({
+				item: 4,
+				slideMove: 4,
+				pager: false,
+				enableDrag: false
+			}); 
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -65,11 +77,25 @@
 			<div class="col-md-12">
 				<h2 class="cursive">Photo Gallery</h2>
 				<p class="bread-crumbs">Albums &gt; Album Title</p>
-
-				<div class="large-img-view">
-					
-					<img src="http://placehold.it/612x408" alt="">
-
+				<div class="gallery-container center-block">
+					<div class="large-img-view">
+						<img src="http://placehold.it/612x408?text=hello1" alt="" class="center-block img-responsive main-image">
+						<div class="img-num" id="imgcounter"></div>
+					</div>
+					<div class="image-thumbs">
+						<ul class="unstyled thumbs" id="lightSlider">
+							<li class="thumb active"><img src="http://placehold.it/240x180?text=hello1" data-ogImg="http://placehold.it/612x408?text=hello1" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello2" data-ogImg="http://placehold.it/612x408?text=hello2" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello3" data-ogImg="http://placehold.it/612x408?text=hello3" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello4" data-ogImg="http://placehold.it/612x408?text=hello4" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello5" data-ogImg="http://placehold.it/612x408?text=hello5" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello6" data-ogImg="http://placehold.it/612x408?text=hello6" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello7" data-ogImg="http://placehold.it/612x408?text=hello7" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello8" data-ogImg="http://placehold.it/612x408?text=hello8" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello9" data-ogImg="http://placehold.it/612x408?text=hello9" alt="" class="img-responsive"></li>
+							<li class="thumb"><img src="http://placehold.it/240x180?text=hello10" data-ogImg="http://placehold.it/612x408?text=hello10" alt="" class="img-responsive"></li>
+						</ul>
+					</div>
 				</div>
 
 			</div>

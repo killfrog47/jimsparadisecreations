@@ -74,4 +74,22 @@ $(function(){
 			$('.mobile-nav').finish().slideToggle(250);
 		}
 	});
+
+	//gallery control
+
+	var newImage,
+		nextImgSrc;
+
+	var numberOfThumbs = $('.gallery-container .thumbs .thumb').length;
+
+	$('#imgcounter').html('1 of ' + numberOfThumbs);
+
+	$('.gallery-container .thumbs .thumb').on('click', function(event) {
+		event.preventDefault();
+		thisIndex = $(this).index();
+		newImage = $(this).find('img').attr('data-ogImg');
+		$('.gallery-container').find('.main-image').attr('src', newImage);
+		$('#imgcounter').html(thisIndex+1 + ' of ' + numberOfThumbs);
+	});
+
 });

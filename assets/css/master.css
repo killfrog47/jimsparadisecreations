@@ -6211,5 +6211,46 @@ header {
     .content-section .gallery.album .bread-crumbs {
       font-size: 12px;
       color: #645a52; }
+    .content-section .gallery.album .gallery-container {
+      width: 612px;
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .content-section .gallery.album .gallery-container {
+          width: 100%; } }
+      .content-section .gallery.album .gallery-container .large-img-view {
+        margin-bottom: 20px; }
+        .content-section .gallery.album .gallery-container .large-img-view img {
+          border: 3px solid #645a52; }
+        .content-section .gallery.album .gallery-container .large-img-view .img-num {
+          text-align: center;
+          color: #645a52;
+          margin-top: 20px; }
+      .content-section .gallery.album .gallery-container .image-thumbs {
+        margin-bottom: 20px; }
+        .content-section .gallery.album .gallery-container .image-thumbs ul {
+          white-space: nowrap;
+          position: relative;
+          left: 0px;
+          width: auto; }
+          .content-section .gallery.album .gallery-container .image-thumbs ul li {
+            list-style: none;
+            display: inline-block;
+            width: 25%;
+            padding: 5px; }
+            .content-section .gallery.album .gallery-container .image-thumbs ul li img {
+              border: 3px solid #645a52; }
+        .content-section .gallery.album .gallery-container .image-thumbs .thumb-controls {
+          background: url(/assets/images/icons/gallery-control.png) no-repeat;
+          width: 19px;
+          height: 22px;
+          position: relative;
+          cursor: pointer;
+          margin-bottom: 20px; }
+          .content-section .gallery.album .gallery-container .image-thumbs .thumb-controls.left {
+            background-position: 0px 0px;
+            float: left; }
+          .content-section .gallery.album .gallery-container .image-thumbs .thumb-controls.right {
+            background-position: -21px 0px;
+            float: right; }
 
 /*# sourceMappingURL=master.css.map */
